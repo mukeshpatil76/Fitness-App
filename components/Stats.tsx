@@ -13,11 +13,11 @@ const Stats: React.FC = () => (
           {[
             { number: "4th", label: "Dan Black Belt" },
             { number: "2x", label: "World Athlete" },
-            { number: "NS NIS", label: "Diploma Coach" },
-            { number: "100%", label: "Professional" }
+            { number: "NS NIS", label: "Coach" },
+            { number: "NATIONAL", label: "Champion" }
           ].map((stat, index) => (
             <div key={index} className="text-white flex flex-col items-center justify-center p-2 group">
-              <div className="text-4xl md:text-5xl font-black mb-2 drop-shadow-md group-hover:scale-110 transition-transform">{stat.number}</div>
+              <div className="text-3xl md:text-5xl font-black mb-2 drop-shadow-md group-hover:scale-110 transition-transform">{stat.number}</div>
               <div className="text-xs md:text-sm font-bold uppercase tracking-widest opacity-90">{stat.label}</div>
             </div>
           ))}
